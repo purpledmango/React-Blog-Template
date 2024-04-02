@@ -1,0 +1,55 @@
+[
+    {
+      "id": "post1",
+      "publishedDate": "2023-08-09",
+      "active": true,
+      "title": "The way of the water",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "thumbnail": "https://picsum.photos/id/237/200/300",
+      "author": "John Doe",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu eros vitae velit dapibus congue. Nullam tincidunt varius quam ac venenatis. Donec id ultricies justo, non consectetur ex. Phasellus ultrices elementum quam, nec iaculis magna mollis non. Proin in odio a purus lacinia volutpat. Etiam eu vulputate nisl.</p><p>Curabitur eleifend euismod leo, nec tincidunt libero tincidunt nec. In scelerisque massa id dolor tempus, ut efficitur purus iaculis. Vestibulum vestibulum odio vitae mauris laoreet tristique. Vivamus rhoncus, mauris sit amet maximus eleifend, sapien turpis bibendum quam, eget posuere velit odio vitae enim. Curabitur nec venenatis mi. Cras viverra mi et est viverra, at elementum sem tincidunt.</p>"
+    },
+    {
+      "id": "post2",
+      "publishedDate": "2023-08-09",
+      "active": false,
+      "title": "DareDevil",
+      "body": "Aenean convallis lectus eu metus placerat, quis consectetur lectus ultrices.",
+      "thumbnail": "https://picsum.photos/id/237/200/300",
+      "author": "Jhonny William",
+      "content": "<p>Aenean convallis lectus eu metus placerat, quis consectetur lectus ultrices. Ut fringilla venenatis massa, eget rutrum lorem ultricies a. Proin fringilla, est eu laoreet egestas, enim neque accumsan ligula, et dapibus ex nisi ut est. Nunc eu odio purus. Fusce rhoncus nisl vel purus consequat ultrices.</p><p>Quisque vitae convallis turpis. Suspendisse commodo, felis nec aliquet bibendum, nisi velit luctus arcu, vel malesuada quam velit et sem. Etiam eu rhoncus purus. Sed tincidunt diam sit amet mi malesuada mollis.</p>"
+    },
+    {
+      "id": "post3",
+      
+      
+      "publishedDate": "2023-08-09",
+      "active": true,
+      "title": "What is the meaning of Life",
+      "body": "Phasellus fringilla augue at nisi volutpat, ac dignissim ipsum hendrerit.",
+      "thumbnail": "https://picsum.photos/id/237/200/300",
+      "author": "JK Rowling",
+      "content": "<p>Phasellus fringilla augue at nisi volutpat, ac dignissim ipsum hendrerit. Fusce eget orci euismod, blandit velit nec, accumsan sapien. Fusce non nunc nec massa feugiat venenatis. Etiam mattis eros eu elit suscipit, sit amet ultrices elit dignissim. Integer ullamcorper, tellus ac ullamcorper venenatis, risus lorem bibendum odio, quis gravida magna massa non lectus.</p><p>Vestibulum ut nisl vel massa euismod venenatis. Ut a bibendum mi, vel sodales tortor. In vel arcu libero. Curabitur nec luctus est. Integer eu augue semper, dapibus enim ut, hendrerit nisi. Nunc a tortor felis. Proin consectetur vehicula lorem a finibus. Maecenas eu nulla vel sapien congue congue.</p>"
+    },
+    {
+      "id": "post4",
+      "publishedDate": "2023-06-011",
+      "active": true,
+      "title": "Everything Everywhere All At Once",
+      "body": "Vestibulum porta purus nec feugiat gravida.",
+      "thumbnail": "https://picsum.photos/id/237/200/300",
+      "author": "Aditya Bharti",
+      "content": "<p>Vestibulum porta purus nec feugiat gravida. Duis tincidunt tristique elit in consectetur. Integer et tempor sapien. Vestibulum vel ligula vel nulla facilisis malesuada. Aliquam ornare, odio eget laoreet vehicula, felis odio cursus nisi, quis sagittis metus mi ut urna. Nunc nec sapien sit amet libero venenatis maximus. Nullam elementum, orci at scelerisque iaculis, quam velit dignissim mi, eu varius urna arcu nec velit.</p><p>In sit amet eleifend justo. Duis id vehicula nisi. In pharetra euismod felis nec finibus. Quisque facilisis magna sit amet nunc varius, quis ultricies velit feugiat. Donec facilisis augue eu odio tempor consequat. Integer tincidunt risus a ex mollis, quis accumsan elit tempor.</p>"
+    },
+    {
+      "id": "post5",
+      "publishedDate": "2023-08-11",
+      "active": false,
+      "title": "The Witchers",
+      "body": "Sed ipsum eros, vestibulum id elit in, tempor ullamcorper odio.",
+      "thumbnail": "https://picsum.photos/id/237/200/300",
+      "author": "Nelson Mandela",
+      "content": "<p>Sed ipsum eros, vestibulum id elit in, tempor ullamcorper odio. Fusce viverra enim mi, vitae iaculis elit faucibus eget. Praesent aliquam velit eget mauris rhoncus, id tincidunt mauris feugiat. Nulla facilisi. Nulla sagittis quam a enim vulputate venenatis. Sed tincidunt nunc eget augue aliquet, eget ullamcorper elit congue. Nam bibendum posuere ipsum, nec facilisis purus egestas vel.</p><p>Nullam at sapien nec elit aliquam venenatis eu in lorem. Ut gravida, odio eu elementum vulputate, ex ipsum congue nulla, a venenatis ligula purus in enim. Vestibulum vel euismod turpis, quis efficitur justo. Suspendisse vulputate in ipsum vel venenatis. Vivamus mollis metus ac elit fermentum, nec malesuada odio egestas.</p>"
+    }
+  ]
+  

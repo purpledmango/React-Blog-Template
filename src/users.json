@@ -1,0 +1,53 @@
+[
+    {
+      "email": "author1@example.com",
+      "password": "password1",
+      "name": "John Doe",
+      "bio": "I am a writer.",
+      "image": "https://picsum.photos/id/23/200/300"
+    },
+    {
+      "email": "author2@example.com",
+      "password": "password2",
+      "name": "Jane Smith",
+      "bio": "I love writing fiction.",
+      "image": "https://picsum.photos/id/237/200/300"
+    },
+    {
+      "email": "author3@example.com",
+      "password": "password3",
+      "name": "Michael Johnson",
+      "bio": "Exploring new ideas through writing.",
+      "image": "https://picsum.photos/id/230/200/300"
+    },
+    {
+      "email": "author4@example.com",
+      "password": "password4",
+      "name": "Emily Brown",
+      "bio": "Passionate about storytelling.",
+      "image": "https://picsum.photos/id/27/200/300"
+    },
+    {
+      "email": "author5@example.com",
+      "password": "password5",
+      "name": "William Lee",
+      "bio": "Creating worlds with words.",
+      "image": "https://picsum.photos/id/2/200/300"
+    },
+    {
+      "email": "author6@example.com",
+      "password": "password6",
+      "name": "Olivia Wilson",
+      "bio": "Inking my imagination.",
+      "image": "https://picsum.photos/id/7/200/300"
+    },
+    {
+      "email": "author7@example.com",
+      "password": "password7",
+      "name": "James Johnson",
+      "bio": "Writing is my passion.",
+      "image": "https://picsum.photos/id/201/200/300"
+    }
+    
+  ]
+  
