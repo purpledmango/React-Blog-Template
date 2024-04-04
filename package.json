@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@tinymce/tinymce-react": "^4.3.0",
     "ajax": "^0.0.4",
-    "axios": "^1.4.0",
+    "axios": "^1.6.8",
     "babel-polyfill": "^6.26.0",
     "draft-js": "^0.11.7",
     "jquery": "^3.7.0",
@@ -47,5 +47,5 @@
   "devDependencies": {
     "tailwindcss": "^3.3.2"
   },
-  "proxy": "http://localhost:8000"
+  "proxy": "http://localhost:9000"
 }

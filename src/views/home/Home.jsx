@@ -1,33 +1,55 @@
+import React, { useState, useEffect } from "react";
 import SideBar from "./SideBar";
 import Footer from "../../common/Footer";
 import LargeTiledPost from "../../common/LargeTile";
 import Nav from "../../common/Nav";
-import articles from "../../posts.json";
+import Spinner from "../../common/Spinner";
+import { getTop3 } from "../../services/homeApi";
+
 const Home = () => {
+  const [top3Articles, setTop3Articles] = useState(null);
+
+  useEffect(() => {
+    const fetchTop3Articles = async () => {
+      try {
+        const response = await getTop3();
+        setTop3Articles(response.data);
+      } catch (error) {
+        console.error("Error fetching top 3 articles:", error);
+      }
+    };
+
+    fetchTop3Articles();
+
+    return () => {
+      // Cleanup code here if needed
+    };
+  }, []);
+
   return (
     <>
       <Nav />
       <div className="lg:grid lg:grid-cols-10">
-        {/* main area */}
-        <div className="w-[90%] h-full flex flex-col justify-center items-center mx-auto lg:col-span-7 lg:w-full">
-          {articles.length > 0 ? (
-            <LargeTiledPost />
+        <div className="w-full lg:col-span-7">
+          {top3Articles ? (
+            top3Articles.map((article) => (
+              <LargeTiledPost key={article.slug} title={article.title} content={article.content} createdAt={article.createdAt} author={article.author} slug={article.slug} />
+            ))
           ) : (
-            <div className="w-[90%] h-full flex flex-col justify-center items-center mx-auto lg:col-span-7 lg:w-full">
-              <h2 className="text-center text-3xl">Found Nothing here!</h2>
+
+            <div class="w-full h-full flex flex-col items-center justify-center">
+              <Spinner />
+              <h2 class="text-3xl capitalize mb-7">Fetching The Good Stuff</h2>
             </div>
+
+
           )}
         </div>
-
-        {/* side Area */}
         <SideBar />
-
-        <div className="col-span-6 grid grid-col-1 lg:grid-cols-2 w-full gap-3 mx-auto h-full p-6 lg:p-0">
-          {/* Render pagination controls */}
+        <div className="lg:col-span-2">
           <div className="pagination-controls"></div>
         </div>
       </div>
-      {/* <MoreContent data={articles} /> */}
       <Footer />
     </>
   );
