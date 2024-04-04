@@ -24,7 +24,7 @@ const LargeTiledPost = ({ title = "Hello", content = "", createdAt = "", author 
     <div className="w-[90%] hover:shadow-lg">
       <div className="w-full mx-auto py-5">
         <img
-          src={`${HOST_NAME}/client/${thumbnail?.path}`}
+          src={`${HOST_NAME}/${thumbnail.path}`}
           className="w-full h-[300px] lg:h-[480px] xl:h-[650px] object-center object-cover rounded-xl"
           alt={thumbnail?.filename}
         />

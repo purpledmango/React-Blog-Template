@@ -33,7 +33,7 @@ const Home = () => {
         <div className="w-full lg:col-span-7">
           {top3Articles ? (
             top3Articles.map((article) => (
-              <LargeTiledPost key={article.slug} title={article.title} content={article.content} createdAt={article.createdAt} author={article.author} slug={article.slug} />
+              <LargeTiledPost key={article.slug} title={article.title} content={article.content} createdAt={article.createdAt} author={article.author} slug={article.slug} tumbnail={article.thumbnail} />
             ))
           ) : (
 
