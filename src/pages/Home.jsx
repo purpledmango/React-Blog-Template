@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-import SideBar from "../views/home/SideBar";
-import Footer from "../components/Footer";
 import LargeTiledPost from "../components/LargeTile";
-import Nav from "../components/Nav";
+import SideBar from "../components/SideBar";
 import Spinner from "../components/Spinner";
 import { getTop3 } from "../services/homeApi";
 
@@ -21,37 +19,38 @@ const Home = () => {
 
     fetchTop3Articles();
 
-    return () => {
-      // Cleanup code here if needed
-    };
+
   }, []);
 
+  console.log("Home Rendered")
+
   return (
-    <>
-      <Nav />
-      <div className="lg:grid lg:grid-cols-10">
-        <div className="w-full lg:col-span-7">
-          {top3Articles ? (
-            top3Articles.map((article) => (
-              <LargeTiledPost key={article.slug} title={article.title} content={article.content} createdAt={article.createdAt} author={article.author} slug={article.slug} thumbnail={article.thumbnail} />
-            ))
-          ) : (
-
-            <div class="w-full h-full flex flex-col items-center justify-center">
-              <Spinner />
-              <h2 class="text-3xl capitalize mb-7">Fetching The Good Stuff</h2>
-            </div>
 
 
-          )}
-        </div>
-        <SideBar />
-        <div className="lg:col-span-2">
-          <div className="pagination-controls"></div>
-        </div>
+    <div className="lg:grid lg:grid-cols-10">
+
+      <div className="w-full lg:col-span-7">
+        {top3Articles ? (
+          top3Articles.map((article) => (
+            <LargeTiledPost key={article.slug} title={article.title} content={article.content} createdAt={article.createdAt} author={article.author} slug={article.slug} thumbnail={article.thumbnail} />
+          ))
+        ) : (
+
+          <div class="w-full h-full flex flex-col items-center justify-center">
+            <Spinner />
+            <h2 class="text-3xl capitalize mb-7">Fetching The Good Stuff</h2>
+          </div>
+
+
+        )}
       </div>
-      <Footer />
-    </>
+      <SideBar />
+      <div className="lg:col-span-2">
+        <div className="pagination-controls"></div>
+      </div>
+    </div>
+
+
   );
 };
 

@@ -21,11 +21,11 @@ const Article = () => {
     };
 
     fetchArticle();
-  }, [slug]); // Include slug in the dependency array
+  }, [slug]);
 
   useEffect(() => {
     if (article) {
-      document.title = `${article.title} • PatchedWeb`; // Update document title when article changes
+      document.title = `${article.title} • PatchedWeb`;
     }
   }, [article]);
 
@@ -38,28 +38,27 @@ const Article = () => {
   }
 
   return (
-    <>
-      <Nav />
-      <div className="my-5 w-full">
-        <div className="w-full flex justify-evenly items-center tracking-wide lg:p-4 lg:m-5 sm:flex-none">
-          <span className="uppercase text-xs">{formatDate(article.createdAt) || "N/A"}</span>
-          <span className="uppercase text-xs">{article.category || "N/A"}</span>
-          <span className="uppercase text-xs">
-            BY,<span className="text-orange-400">{article.author || "Unknown"}</span>
-          </span>
-        </div>
-        <div className="grid lg:grid-cols-4">
-          <div className="lg:col-span-1"></div>
-          <div className="lg:col-span-2 p-5 lg:my-5">
-            <h1 className="text-4xl py-5 lg:my-5">{article.title}</h1>
-            {/* Render article content with HTML tags safely */}
-            <div dangerouslySetInnerHTML={{ __html: article.content || "" }} />
-          </div>
-          <div className="lg:col-span-1"></div>
-        </div>
+
+
+    <div className="my-5 w-full">
+      <div className="w-full flex justify-evenly items-center tracking-wide lg:p-4 lg:m-5 sm:flex-none">
+        <span className="uppercase text-xs">{formatDate(article.createdAt) || "N/A"}</span>
+        <span className="uppercase text-xs">{article.category || "N/A"}</span>
+        <span className="uppercase text-xs">
+          BY,<span className="text-orange-400">{article.author || "Unknown"}</span>
+        </span>
       </div>
-      {/* If necessary, render MoreContent component here */}
-    </>
+      <div className="grid lg:grid-cols-4">
+        <div className="lg:col-span-1"></div>
+        <div className="lg:col-span-2 p-5 lg:my-5">
+          <h1 className="text-4xl py-5 lg:my-5">{article.title}</h1>
+          {/* Render article content with HTML tags safely */}
+          <div dangerouslySetInnerHTML={{ __html: article.content || "" }} />
+        </div>
+        <div className="lg:col-span-1"></div>
+      </div>
+    </div>
+
   );
 };
 
