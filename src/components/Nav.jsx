@@ -13,7 +13,7 @@ const Nav = () => {
     <section>
       <nav className="lg:flex lg:justify-between p-5">
         <div className="flex justify-around items-center">
-          {/* Hamburger Menu TOGGLE */}
+
           <div
             className="flex flex-col gap-1 lg:hidden"
             onClick={toggleMenu}
@@ -24,15 +24,15 @@ const Nav = () => {
           </div>
 
           <div className="text-4xl flex justify-center items-center lg:justify-start">
-            <img className="min-w-[148px] max-w-[248px]" src={logo} alt="Logo" />
+            <Link to="/">
+              <img className="min-w-[148px] max-w-[248px]" src={logo} alt="Logo" />
+            </Link>
           </div>
 
           <div className="lg:hidden">
             <FiSearch />
           </div>
         </div>
-
-        {/* Mob MENU OPEN */}
 
         <div
           className={`md:w-[80%] mx-auto font-bold text-xl h-auto bg-orange-500 text-white rounded lg:bg-[white] lg:text-black ${menuVisible ? 'block' : 'hidden'}`}
@@ -56,7 +56,7 @@ const Nav = () => {
             </li>
           </ul>
         </div>
-        {/* Desktop Menu */}
+
         <div
           className={`md:w-[80%] mx-auto hidden lg:block font-semibold text-xl h-auto bg-orange-500 text-white rounded lg:bg-[white] lg:text-black `}
         >

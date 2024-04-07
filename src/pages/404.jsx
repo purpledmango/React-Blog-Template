@@ -1,4 +1,4 @@
-import Nav from "../common/Nav";
+import Nav from "../components/Nav";
 
 const About = () => {
 

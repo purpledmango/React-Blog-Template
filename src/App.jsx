@@ -1,21 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./views/home/Home";
-
-import ArticlePage from "./views/post/ArticlePage";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./style.css";
-import About from "./views/About";
+import Base from "./views/Base";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/article/:slug" element={<ArticlePage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<About />} />
-
-        </Routes>
+        <Base />
       </div>
     </Router>
   );

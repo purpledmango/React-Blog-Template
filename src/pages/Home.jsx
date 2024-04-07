@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import SideBar from "./SideBar";
-import Footer from "../../common/Footer";
-import LargeTiledPost from "../../common/LargeTile";
-import Nav from "../../common/Nav";
-import Spinner from "../../common/Spinner";
-import { getTop3 } from "../../services/homeApi";
+import SideBar from "../views/home/SideBar";
+import Footer from "../components/Footer";
+import LargeTiledPost from "../components/LargeTile";
+import Nav from "../components/Nav";
+import Spinner from "../components/Spinner";
+import { getTop3 } from "../services/homeApi";
 
 const Home = () => {
   const [top3Articles, setTop3Articles] = useState(null);
