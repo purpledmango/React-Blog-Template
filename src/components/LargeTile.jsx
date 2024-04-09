@@ -4,7 +4,7 @@ import { HOST_NAME } from "../constants/hosts";
 import { formatAuthorName } from "../utlis/authorNames";
 import { formatDate } from "../utlis/dateFormatter";
 
-const LargeTiledPost = ({ title = "Hello", content = "", createdAt = "", author = "", thumbnail = "", id = "", comments = 0, slug = "" }) => {
+const LargeTiledPost = ({ title = "Hello", content = "", createdAt = "", author = "", thumbnail = "", id = "", comments = 0, slug = "", meta_description = " " }) => {
   const [authorName, setAuthorName] = useState("");
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const LargeTiledPost = ({ title = "Hello", content = "", createdAt = "", author 
       <div className="w-full mx-auto py-5">
         <img
           src={`${HOST_NAME}/${thumbnail?.path}`}
-          className="w-full h-[300px] lg:h-[480px] xl:h-[650px] object-center object-cover rounded-xl"
+          className="w-full h-[300px] lg:h-[480px] xl:h-[650px]  object-contain rounded-xl"
           alt={thumbnail?.filename}
         />
       </div>
@@ -41,7 +41,7 @@ const LargeTiledPost = ({ title = "Hello", content = "", createdAt = "", author 
           <h2 className="text-3xl font-medium my-1 text-center">
             {title}
           </h2>
-          <p className="text-center text-sm font-extralight mt-2" dangerouslySetInnerHTML={{ __html: `${content.replace(/<\/?[^>]+(>|$)/g, "")} ...` }} />
+          <p className="text-center text-sm font-extralight mt-2" dangerouslySetInnerHTML={{ __html: `${meta_description.replace(/<\/?[^>]+(>|$)/g, "")} ...` }} />
 
           <div className="w-full flex justify-between py-3 items-center mb-8 lg:mb-1">
             <Link

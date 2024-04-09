@@ -11,26 +11,37 @@ body{
     font-family: var(--main-font);
 }
 
-.modal-enter {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  
-  .modal-enter-active {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 300ms, transform 300ms;
-  }
-  
-  .modal-exit {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .modal-exit-active {
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: opacity 300ms, transform 300ms;
-  }
-  
-  
+
+#content h2{
+  font-size: 1.5rem;
+
+}
+
+#content h3{
+
+  font-size: 1.2rem;
+
+}
+#content h4{
+
+  font-size: 1.1rem;
+
+}
+#content h1,h2,h3,h4,h5,h6{
+   padding-top: 12px;
+}
+
+#content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#content ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+#content ul li, #content ol li {
+  margin-bottom: 6px;
+  font-size: 16px;
+}

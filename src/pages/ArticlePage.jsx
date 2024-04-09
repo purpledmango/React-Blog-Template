@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Nav from "../components/Nav";
 import { getArticleApi } from "../services/homeApi";
 import Spinner from "../components/Spinner";
 import { formatDate } from "../utlis/dateFormatter";
+import { HOST_NAME } from "../constants/hosts";
 
 const Article = () => {
   const { slug } = useParams();
@@ -49,11 +49,19 @@ const Article = () => {
         </span>
       </div>
       <div className="grid lg:grid-cols-4">
-        <div className="lg:col-span-1"></div>
+        {/* for banners ord ads */}
+        <div className="lg:col-span-1">
+
+        </div>
         <div className="lg:col-span-2 p-5 lg:my-5">
           <h1 className="text-4xl py-5 lg:my-5">{article.title}</h1>
           {/* Render article content with HTML tags safely */}
-          <div dangerouslySetInnerHTML={{ __html: article.content || "" }} />
+          <img
+            src={`${HOST_NAME}/${article.thumbnail.path}`}
+            className="w-full h-[300px] lg:h-[480px] xl:h-[650px]  object-contain rounded-xl"
+            alt={article.thumbnail.filename}
+          />
+          <p id="content" dangerouslySetInnerHTML={{ __html: article.content || "" }} />
         </div>
         <div className="lg:col-span-1"></div>
       </div>
