@@ -32,15 +32,7 @@ const Footer = () => {
 
           <div className="lg:w-1/3">
             <p className="text-xs py-6">
-              Disclosure — In order to grow our small business, Cup of Jo earns
-              revenue in a few different ways. We publish several sponsored
-              posts each month, which are always labeled at the top. We also
-              sometimes earn an affiliate commission on the sales of products we
-              link to. We feature only items we genuinely love and want to
-              share, and this is an arrangement between the retailer and Cup of
-              Jo (readers never pay more for products). These are the ways we
-              support Cup of Jo, and allow us to run the site and engage with
-              this community we truly love. Thank you for reading!
+              PatchedWeb
             </p>
           </div>
         </div>
